@@ -1,0 +1,131 @@
+body {
+  background: #000;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #F30;
+  text-decoration: none;  
+}
+img {
+  border: 0;  
+}
+
+#title {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0px;
+  font: 11px Myriad, Helvetica, Arial, sans-serif;
+  padding: 10px 20px;
+  position: fixed;
+  right: 0px;  
+  text-align: right;
+  width: 100%;
+}
+  #title h1 {
+    font: 30px 'Oswald', Myriad, Helvetica, Arial, serif;
+    margin: 0;  
+    padding: 0;
+  }
+
+#thumbnails {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);  
+  height: 120px;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 5px;
+}
+  #thumbnails ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    white-space: nowrap;
+  }
+    #thumbnails li {
+      /* float: left; */
+      display: inline;
+      list-style: none;
+      margin: 5px;
+      padding: 0;
+    }
+    #thumbnails a {
+      outline: none;
+    }
+/*    #thumbnails img {
+      width: 112px;
+    } */
+
+#Gallery {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);  
+}
+  #Gallery ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    white-space: nowrap;
+  }
+    #Gallery li {
+      float: left;
+      display: inline;
+      list-style: none;
+      margin: 5px;
+      padding: 0;
+    }
+    #Gallery a {
+      outline: none;
+    }
+
+.highlight { 
+  margin: -5px;
+  border: 5px solid red;
+}
+      
+#pause {
+  display: none;
+  font: 100px 'Oswald', Myriad, Helvetica, Arial, serif;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 5px #000;
+  width: 100%;
+}
+  #pause a {
+    color: #FFF;
+    height: 100px;
+    left: 50%;
+    margin: -50px 0 0 -250px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    width: 500px;
+  }
+
+.vegas-loading {
+  top: auto;
+  bottom: 40px;
+  left: 40px;
+}
+/*.vegas-overlay {
+  background-image: url(../js/vegas/overlays/02.png);
+} */
+
+.jspHorizontalBar {
+  height: 10px;  
+}
+  .jspHorizontalBar .jspTrack {
+    background: #333;
+  }
+  .jspHorizontalBar .jspDrag {
+    background: #666;
+    cursor: ew-resize;
+  }
+  #thumbnails:hover .jspHorizontalBar .jspDrag {
+    background: #F30;
+  }

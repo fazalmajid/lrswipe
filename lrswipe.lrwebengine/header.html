@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Adobe Photoshop Lightroom" >
+<title>$model.metadata.siteTitle.value</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:400,700">
+<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css">
+<link rel="stylesheet" type="text/css" href="js/jscrollpane/jquery.jscrollpane.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="photoswipe.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/vegas/jquery.vegas.js"></script>
+<script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="js/klass.min.js"></script>
+<script src="js/gallery.js"></script>
+<% --[[ Scripting support for rollovers and (when previewed in Lightroom) live Update, photobin syncing 
+
+<script type="text/javascript">
+<!--
+
+	window.AgMode = "$mode";
+	<% if mode == 'preview' then %>
+	window.AgOnLoad = function() {
+		tellLightroomWhatImagesWeAreUsing(); 
+		setActiveImageSize( "<%= mySize %>" );
+		<% if image then %>
+			callCallback( "showInPhotoBin", "$image.imageID" );
+		<% end %>
+	}
+	<% end %>
+	
+	function updateImage(img){
+		if(img != null){
+			var t = document.getElementById("targetimage");
+			var tt = document.getElementById("targettitle");
+			var tc = document.getElementById("targetcaption");
+			t.src = img.getAttribute("imgsrc");
+			tt.value = img.getAttribute("imagetitle");
+			tc.value = img.getAttribute("imagedescription");
+			t.width = img.getAttribute("imagewidth");
+			t.height = img.getAttribute("imageheight");
+		}
+	}
+-->
+</script>
+<script type="text/javascript" src="$theRoot/resources/js/live_update.js"></script>
+]] %>
+<script src="code.photoswipe.jquery-3.0.5.min.js"></script>
