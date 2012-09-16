@@ -1,0 +1,8 @@
+tags = {
+  ul = {
+    startTag = [[for i=1, numImages do
+  local image = getImage(i)
+  ]],
+    endTag = 'end'
+  }
+}

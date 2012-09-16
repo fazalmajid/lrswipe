@@ -16,6 +16,7 @@
 <script src="js/klass.min.js"></script>
 <script src="js/gallery.js"></script>
 <% --[[ Scripting support for rollovers and (when previewed in Lightroom) live Update, photobin syncing 
+]] %>
 
 <script type="text/javascript">
 <!--
@@ -46,5 +47,19 @@
 -->
 </script>
 <script type="text/javascript" src="$theRoot/resources/js/live_update.js"></script>
-]] %>
 <script src="code.photoswipe.jquery-3.0.5.min.js"></script>
+<script>
+meta = {
+<%
+for i=1, numImages do
+  local img = getImage(i)
+  -- trailing commas in JS object literals cause errors in IE8 and earlier
+  local comma = i < numImages and ',\n' or '\n'
+%>
+"<%=img.exportFilename %>.jpg": "<%=img.metadata.exif %>"$comma
+<%
+end
+%>
+}
+</script>
+</head>

@@ -1,132 +1,3 @@
-<script>
-meta = {
-  "IMG_6194.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 42mm, 1/50 sec at f/2.8, ISO 3200", 
-  "6M9C0234.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 59mm, 1/60 sec at f/2.8, ISO 100", 
-  "6M9C1160.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 52mm, 1/40 sec at f/2.8, ISO 1600", 
-  "IMG_6214.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 48mm, 1/60 sec at f/3.5, ISO 1600", 
-  "L1020700.jpg": "LEICA X1, 24.0 mm f/2.8 @ 24mm, 1/30 sec at f/2.8, ISO 1600", 
-  "6M9C1090.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 64mm, 1/25 sec at f/2.8, ISO 400", 
-  "IMG_6571.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 63mm, 1/50 sec at f/2.8, ISO 1600", 
-  "IMG_6414.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 55mm, 1/60 sec at f/2.8, ISO 1600", 
-  "L1000012.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/60 sec at f/2, ISO 640", 
-  "6M9C0070.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 40mm, 1/30 sec at f/5.6, ISO 1000", 
-  "DSCF0090.jpg": "FinePix X100, 23mm, 1/125 sec at f/2, ISO 2500", 
-  "IMG_6457.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 59mm, 1/60 sec at f/3.2, ISO 1600", 
-  "L1000050.jpg": "M9 Digital Camera, Leica Apo-Summicron-M 90mm f/2 ASPH. @ 90mm, 1/90 sec at f/2.4, ISO 1250", 
-  "IMG_6319.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 48mm, 1/60 sec at f/3.5, ISO 1600", 
-  "IMG_6388.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 48mm, 1/60 sec at f/3.5, ISO 1600", 
-  "IMG_6746.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 51mm, 1/50 sec at f/2.8, ISO 1600", 
-  "DSCF0277.jpg": "FinePix X100, 23mm, 1/40 sec at f/2, ISO 1600", 
-  "6M9C1165.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 34mm, 1/25 sec at f/2.8, ISO 1600", 
-  "IMG_6380.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 38mm, 1/60 sec at f/3.5, ISO 1600", 
-  "IMG_6693.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 59mm, 1/15 sec at f/5.6, ISO 100", 
-  "IMG_6764.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 30mm, 1/125 sec at f/7.1, ISO 400", 
-  "L1001367.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/30 sec at f/4, ISO 160", 
-  "IMG_6980.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 35mm, 1/30 sec at f/2.8, ISO 1600", 
-  "IMG_6357.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 65mm, 1/60 sec at f/2.8, ISO 1600", 
-  "L1001226.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/45 sec at f/3.4, ISO 640", 
-  "IMG_7144.jpg": "Canon EOS 5D Mark II, EF100mm f/2.8 Macro USM @ 100mm, 1/160 sec at f/3.5, ISO 800", 
-  "DSCF0257.jpg": "X-Pro1, XF35mmF1.4 R @ 35mm, 1/140 sec at f/2.5, ISO 200", 
-  "L1020708.jpg": "LEICA X1, 24.0 mm f/2.8 @ 24mm, 1/80 sec at f/4, ISO 100", 
-  "IMG_6946.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 51mm, 1/200 sec at f/5.6, ISO 640", 
-  "DSCF0073.jpg": "FinePix X100, 23mm, 1/80 sec at f/2.2, ISO 640", 
-  "IMG_6456.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 66mm, 1/50 sec at f/2.8, ISO 1600", 
-  "L1001070.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/45 sec at f/1.4, ISO 800", 
-  "6M9C1184.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 57mm, 1/100 sec at f/3.5, ISO 1600", 
-  "DSCF0010.jpg": "FinePix X100, 23mm, 1/80 sec at f/2, ISO 200", 
-  "DSCF0320.jpg": "X-Pro1, XF35mmF1.4 R @ 35mm, 1/350 sec at f/3.6, ISO 800", 
-  "6M9C1053.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 45mm, 1/125 sec at f/5, ISO 1600", 
-  "IMG_6283.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 52mm, 1/50 sec at f/2.8, ISO 1600", 
-  "IMG_6334.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 70mm, 1/80 sec at f/3.2, ISO 1600", 
-  "6M9C1133.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 46mm, 1/40 sec at f/2.8, ISO 800", 
-  "L1020691.jpg": "LEICA X1, 24.0 mm f/2.8 @ 24mm, 1/50 sec at f/3.5, ISO 100", 
-  "DSCF0003.jpg": "FinePix X100, 23mm, 1/40 sec at f/2, ISO 200", 
-  "6M9C0165.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 70mm, 1/60 sec at f/2.8, ISO 3200", 
-  "IMG_6871.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 66mm, 1/40 sec at f/2.8, ISO 1600", 
-  "DSCF0100.jpg": "X-Pro1, XF35mmF1.4 R @ 35mm, 1/125 sec at f/2.5, ISO 640", 
-  "IMG_7085.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 70mm, 1/125 sec at f/4, ISO 1600", 
-  "IMG_7040.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 50mm, 1/100 sec at f/4, ISO 1600", 
-  "IMG_6305.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 55mm, 1/60 sec at f/3.2, ISO 1600", 
-  "L1020604.jpg": "LEICA X1, 24.0 mm f/2.8 @ 24mm, 1/30 sec at f/2.8, ISO 160", 
-  "IMG_6523.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 63mm, 1/160 sec at f/4.5, ISO 1600", 
-  "L1001156.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/90 sec at f/4, ISO 160", 
-  "6M9C1144.jpg": "Canon EOS 5D Mark III, EF24-70mm f/2.8L USM @ 32mm, 1/100 sec at f/4.5, ISO 800", 
-  "IMG_6741.jpg": "Canon EOS 5D Mark II, EF24-70mm f/2.8L USM @ 51mm, 1/40 sec at f/2.8, ISO 1600", 
-  "DSCF0434.jpg": "X-Pro1, XF35mmF1.4 R @ 35mm, 1/400 sec at f/6.4, ISO 200", 
-  "L1001119.jpg": "M9 Digital Camera, Leica Summilux-M 50mm f/1.4 ASPH. @ 50mm, 1/45 sec at f/2, ISO 640"
-}
-</script>
-</head>
-
-<body>
-  <div id="title">
-    <h1>Afsheen</h1>
-    <p id="description"></p>
-    <p id="details">Copyright &copy;2012&nbsp;<a href="http://majid.info/blog/">Fazal Majid.</a> All rights reserved. &mdash; <span id="info"></span></p>
-  </div>
-  <div id="thumbnails">
-    <ul>
-      <li><a href="img/6M9C1184.jpg"><img src="thumbnails/6M9C1184.jpg" alt="Reader" title="" data-valign="top"></a></li>
-      <li><a href="img/L1000050.jpg"><img src="thumbnails/L1000050.jpg" alt="Pensive" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1165.jpg"><img src="thumbnails/6M9C1165.jpg" alt="Carry-on" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1160.jpg"><img src="thumbnails/6M9C1160.jpg" alt="With Dadi" title="" data-valign="top"></a></li>
-      <li><a href="img/L1000012.jpg"><img src="thumbnails/L1000012.jpg" alt="Eid outfit" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0434.jpg"><img src="thumbnails/DSCF0434.jpg" alt="Slide" title="" data-valign="top"></a></li>
-      <li><a href="img/L1020708.jpg"><img src="thumbnails/L1020708.jpg" alt="Splay" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1144.jpg"><img src="thumbnails/6M9C1144.jpg" alt="Waving Hi!" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1133.jpg"><img src="thumbnails/6M9C1133.jpg" alt="Lolo and Dadi" title="" data-valign="top"></a></li>
-      <li><a href="img/L1020700.jpg"><img src="thumbnails/L1020700.jpg" alt="Drinks are in order" title="" data-valign="top"></a></li>
-      <li><a href="img/L1020691.jpg"><img src="thumbnails/L1020691.jpg" alt="Reading time" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1090.jpg"><img src="thumbnails/6M9C1090.jpg" alt="Squashface" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C1053.jpg"><img src="thumbnails/6M9C1053.jpg" alt="Jeans" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0320.jpg"><img src="thumbnails/DSCF0320.jpg" alt="BMW indoctrination" title="Afsheen is very fond of knobs, dials and air vents" data-valign="top"></a></li>
-      <li><a href="img/L1001367.jpg"><img src="thumbnails/L1001367.jpg" alt="Afsheen sucks her toe" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C0234.jpg"><img src="thumbnails/6M9C0234.jpg" alt="Not pink for a change" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0257.jpg"><img src="thumbnails/DSCF0257.jpg" alt="Back from London" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0073.jpg"><img src="thumbnails/DSCF0073.jpg" alt="Flying off to London" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0010.jpg"><img src="thumbnails/DSCF0010.jpg" alt="Tiara" title="" data-valign="top"></a></li>
-      <li><a href="img/L1001226.jpg"><img src="thumbnails/L1001226.jpg" alt="Hug" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C0165.jpg"><img src="thumbnails/6M9C0165.jpg" alt="Afsheen loves Sophie" title="" data-valign="top"></a></li>
-      <li><a href="img/L1001156.jpg"><img src="thumbnails/L1001156.jpg" alt="Afsheen and Aleeza" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0003.jpg"><img src="thumbnails/DSCF0003.jpg" alt="Play time" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0090.jpg"><img src="thumbnails/DSCF0090.jpg" alt="Gazing at the air vents" title="" data-valign="top"></a></li>
-      <li><a href="img/6M9C0070.jpg"><img src="thumbnails/6M9C0070.jpg" alt="Baby callisthenics" title="" data-valign="top"></a></li>
-      <li><a href="img/L1001119.jpg"><img src="thumbnails/L1001119.jpg" alt="Peekaboo" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0100.jpg"><img src="thumbnails/DSCF0100.jpg" alt="Punchy attitude" title="" data-valign="top"></a></li>
-      <li><a href="img/L1001070.jpg"><img src="thumbnails/L1001070.jpg" alt="Looking around" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_7144.jpg"><img src="thumbnails/IMG_7144.jpg" alt="Radiant smile" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_7085.jpg"><img src="thumbnails/IMG_7085.jpg" alt="Smiley lolo" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_7040.jpg"><img src="thumbnails/IMG_7040.jpg" alt="Strawberry Girl" title="" data-valign="top"></a></li>
-      <li><a href="img/DSCF0277.jpg"><img src="thumbnails/DSCF0277.jpg" alt="Lolo and Dada" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6980.jpg"><img src="thumbnails/IMG_6980.jpg" alt="Aqeeqa girl" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6946.jpg"><img src="thumbnails/IMG_6946.jpg" alt="Roaring Twenties style" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6871.jpg"><img src="thumbnails/IMG_6871.jpg" alt="Feisty one" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6764.jpg"><img src="thumbnails/IMG_6764.jpg" alt="Family portrait" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6746.jpg"><img src="thumbnails/IMG_6746.jpg" alt="Papa is king of burps" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6741.jpg"><img src="thumbnails/IMG_6741.jpg" alt="Smiley lolo" title="" data-valign="top"></a></li>
-      <li><a href="img/L1020604.jpg"><img src="thumbnails/L1020604.jpg" alt="Pink teddies" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6693.jpg"><img src="thumbnails/IMG_6693.jpg" alt="Family portrait" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6571.jpg"><img src="thumbnails/IMG_6571.jpg" alt="Shaheen and Lolo" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6523.jpg"><img src="thumbnails/IMG_6523.jpg" alt="Bonding with Daddy" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6457.jpg"><img src="thumbnails/IMG_6457.jpg" alt="Smiley lolo" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6456.jpg"><img src="thumbnails/IMG_6456.jpg" alt="Nani hug" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6414.jpg"><img src="thumbnails/IMG_6414.jpg" alt="Little feet" title="Just before cutting the hospital tags" data-valign="top"></a></li>
-      <li><a href="img/IMG_6388.jpg"><img src="thumbnails/IMG_6388.jpg" alt="Totoro stands guard" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6380.jpg"><img src="thumbnails/IMG_6380.jpg" alt="Tired but beaming grandparents" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6357.jpg"><img src="thumbnails/IMG_6357.jpg" alt="Tiny hands" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6334.jpg"><img src="thumbnails/IMG_6334.jpg" alt="Help, help, let me out!" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6319.jpg"><img src="thumbnails/IMG_6319.jpg" alt="Who're you looking at?" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6305.jpg"><img src="thumbnails/IMG_6305.jpg" alt="She chortled in her joy" title="Wearing one of nurse June's trademark bow hats" data-valign="top"></a></li>
-      <li><a href="img/IMG_6283.jpg"><img src="thumbnails/IMG_6283.jpg" alt="One day old" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6214.jpg"><img src="thumbnails/IMG_6214.jpg" alt="With Nana Pasha" title="" data-valign="top"></a></li>
-      <li><a href="img/IMG_6194.jpg"><img src="thumbnails/IMG_6194.jpg" alt="Hello, world!" title="Picture taken just 2 hours after she was born." data-valign="top"></a></li>
-
-    </ul>
-  </div>
-  <div id="pause"><a href="#">Paused</a></div>
-</body>
-</html>
-
 <%
 --[[ Define some variables to make locating other resources easier
      firstPage was defined in our manifest.]]
@@ -140,11 +11,6 @@ meta = {
     local width
     local height
 %>
-
-<% --[[ Include the page header]] %>
-<%@ include file="header.html" %>
-<%@ include file="body.html" %>
-
 <%
 	--[[ determine the first image within the gallery ]]
     if numImages > 0 then
@@ -159,29 +25,18 @@ meta = {
         caption = "Add some images to LightRoom to display metadata here"
     end
 %>
-<div class="content">
-	<span class="leftpanel">
-        <lr:ThumbnailGrid>
-            <lr:GridPhotoCell>
-                <a class="thumbnail" onclick="updateImage(this);" imgsrc="$others/bin/images/large/<%= image.exportFilename %>.jpg" id="<%= image.imageID %>" imagetitle="<%=image.metadata.title%>" imagedescription="<%=image.metadata.description%>" imagewidth="<%=image.renditions.large.width %>" imageheight="<%=image.renditions.large.height %>">
-                   	<img src="$others/bin/images/thumb/<%= image.exportFilename %>.jpg" id="<%= image.imageID %>" class="thumb" title="<%= image.exportFilename %>"/>
-                </a>
-            </lr:GridPhotoCell>
-            <lr:GridRowEnd>
-              <div class="clear">
-              </div>
-            </lr:GridRowEnd>
-        </lr:ThumbnailGrid>
-	</span>
-	<span class="clear"></span>
-	<span id="image_viewer">
-    	<img id="targetimage" src="$firstImage" width="$width" height="$height"/>	
-        <div class="clear"></div>
-        <span><input id="targettitle" value="$title" class="metalabel" size="100"/></span>
-        <div class="clear"></div>
-        <span><input id="targetcaption" value="$caption" class="metalabel" size="100"/></span>
-     	
-	</span>
-</div>
-<% --[[ Include the page footer]] %>
-<%@ include file="footer.html" %>
+<%@ include file="header.html" %>
+<body>
+  <div id="title">
+    <h1>$model.metadata.siteTitle.value</h1>
+    <p id="description"></p>
+    <p id="details">Copyright &copy;2012&nbsp;<a href="http://majid.info/blog/">Fazal Majid.</a> All rights reserved. &mdash; <span id="info"></span></p>
+  </div>
+  <div id="thumbnails">
+    <fm:ul>
+      <li><a href="$others/bin/images/large/<%= image.exportFilename %>.jpg"><img src="$others/bin/images/thumb/<%= image.exportFilename %>.jpg" alt="<%=image.metadata.title %>" title="<%=image.metadata.description %>" data-valign="top"></a></li>
+    </fm:ul>
+  </div>
+  <div id="pause"><a href="#">Paused</a></div>
+</body>
+</html>

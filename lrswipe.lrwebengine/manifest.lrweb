@@ -1,11 +1,9 @@
 importTags( "lr", "com.adobe.lightroom.default" ) -- main lightroom tags including Pagination.
+importTags( "fm", "fmtags.lrweb" )
 
-
--- create a GridPage called grid.html with 1 column and 50 rows as defined in the galleryInfo
-AddGridPages {
-	template="index.html",
-	rows=model.nonCSS.numRows,
-	columns=model.nonCSS.numCols,
+AddPage {
+  template="index.html",
+  filename="index.html"
 }
 -- Include custom stylesheet
 AddCustomCSS{

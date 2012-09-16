@@ -115,6 +115,10 @@ return {
 			enabled = true,
 			value = "{{com.adobe.title}}",
 		},
+		["perImageSetting.exif"] = {
+			enabled = true,
+			value = "{{com.adobe.make}} {{com.adobe.model}} {{com.adobe.make}}, {{com.adobe.lens}} @ {{com.adobe.focalLength}}, {{com.adobe.exposure}}, ISO {{com.adobe.ISOSpeedRating}}",
+		},
 		
 	},
 	properties = {
